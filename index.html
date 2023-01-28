@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="black">
+    <!-- <meta http-equiv="cache-control" content="Private" />
+    <meta http-equiv="Expires" content="36000" /> -->
+
+    <title> Portfolio </title>
+    <link rel="shortcut icon" href="./data/images/icon.png" type="image/x-icon">
+
+    <script src="./js/script.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-base font-sans selection:bg-green-500/40">
+    <ul class="fixed h-screen w-screen hidden motion-safe:md:block top-0 left-0 overflow-hidden">
+            <li class="shooting-star top-[40%] left-0 bg-red-400 before:from-red-400"></li>
+            <li class="shooting-star top-[20%] left-0 bg-blue-600 before:from-blue-600"></li>
+            <li class="shooting-star -top-[12px] left-[5%] bg-green-300 before:from-green-300"></li>
+            <li class="shooting-star -top-[12px] left-[35%] bg-yellow-400 before:from-yellow-400"></li>
+            <li class="shooting-star top-0 left-[45%] bg-red-800 before:from-red-800"></li>
+            <li class="shooting-star -top-[12px] left-[65%] bg-purple-600 before:from-purple-600"></li>
+    </ul>
+
+    <main class="relative h-screen w-screen overflow-hidden">
+        <nav class="px-[8vw] sm:px-[12vw] h-auto w-full sm:flex sm:justify-between sm:items-center">
+            <div class="flex justify-between items-center">
+                <a id="home-btn" href="/" class="flex items-center">
+                    <img src="./data/images/icon.png" alt="Logo" class="h-20 p-4">
+                    <span id="name" class="md:ml-2 text-white font-nunito font-bold text-2xl xs:text-3xl"> </span>
+                </a>
+                <button id="menu" class="sm:hidden border-2 px-1 border-transparent focus:border-yellow-500 rounded-lg">
+                    <svg class="fill-yellow-500 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path></svg>
+                </button>
+            </div>
+            <ul id="nav" class="hidden h-auto mb-6 sm:mb-0 sm:flex text-center text-[1.45rem] sm:text-[1.33rem] text-yellow-500 font-baloo font-medium">
+                <li class="nav-btn group">
+                    <button id="skills-btn"> Skills </button>
+                    <hr class="sm:group-hover:scale-x-100">
+                </li>
+                <li class="nav-btn group">
+                    <button id="projects-btn"> Projects </button>
+                    <hr class="sm:group-hover:scale-x-100">
+                </li>
+                <li class="nav-btn group">
+                    <button id="about-btn"> About </button>
+                    <hr class="sm:group-hover:scale-x-100">
+                </li>
+                <li class="nav-btn group">
+                    <button id="contact-btn"> Contact </button>
+                    <hr class="sm:group-hover:scale-x-100">
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content" class="text-white px-[8vw] overflow-scroll h-full scroll-smooth motion-safe:snap-y snap-mandatory">
+
+            <section id="home" class="snap-always snap-start">
+                <br class="my-0 sm:my-5">
+                
+                <div class="lg:flex mt-[5vh] justify-around items-center h-[55vh]">
+                    <div class="lg:max-w-[40vw] lg:mr-4 text-xl md:text-2xl text-center">
+                        <span class="block font-mono font-semibold text-4xl xs:text-5xl xl:text-6xl mb-6"> <span id="hello"></span><span class="font-sans font-extrabold text-green-500 animate-blink">_</span> </span>
+                        <p id="shortintro">
+                            <!-- inserted through JS -->
+                        </p>
+                    </div>
+    
+                    <button id="resume" class="cursor-pointer mx-auto lg:mx-0 flex py-5 px-8 sm:px-10 md:px-16 rounded-full text-2xl sm:text-3xl font-semibold my-10 bg-gradient-to-r from-gr1-1 via-gr1-2 to-gr1-3 motion-safe:animate-gradient hover:scale-x-105 duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[36px] mr-6 sm:mr-2 md:mr-6 stroke-white fill-transparent" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                          </svg>
+                        <span> My&nbsp;Resume </span>
+                    </button>
+    
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-36 w-36 fill-transparent stroke-yellow-500 motion-safe:animate-bounce" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div> <br>
+            </section>
+
+
+            <section id="skills" class="snap-always snap-start h-[90vh]">
+                <span class="sec-head">
+                    My Skills
+                </span>
+                <div id="loading" class="flex justify-center h-full w-full">
+                    <svg class="animate-spin h-[3em] lg:h-[4em] w-auto opacity-60 mt-[40%] md:mt-[25%] lg:mt-[12%] text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </div>
+                <div class="hidden w-full h-full fade-l-scroll">
+                    <div class="flex justify-between gap-3 sm:gap-6 overflow-x-scroll h-[75%] w-full snap-x snap-mandatory">
+                        <div id="languages" class="skills-box snap-start bg-cyan-200/30 border-cyan-200/30 shadow-xl shadow-cyan-200/20">
+                            <p> Languages </p>
+                            <hr class="mt-[3rem] border-[1px]">
+                            <div class="w-[24rem] h-0"></div>
+                            <br>
+                            <!-- To be inserted through JS -->
+                        </div>
+                        <div id="libraries" class="skills-box snap-center bg-red-100/30 border-red-100/30 shadow-xl shadow-red-100/20">
+                            <p> Frameworks & Databases </p>
+                            <hr class="mt-[3rem] border-[1px]">
+                            <div class="w-[24rem] h-0"></div>
+                            <br>
+                            <!-- To be inserted through JS -->
+                        </div>
+                        <div id="tools" class="skills-box snap-end bg-gray-200/30 border-gray-200/30 shadow-xl shadow-gray-200/20">
+                            <p> Tools & Others </p>
+                            <hr class="mt-[3rem] border-[1px]">
+                            <div class="w-[24rem] h-0"></div>
+                            <br>
+                            <!-- To be inserted through JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="projects" class="snap-always snap-start h-[90vh]">
+                <span class="sec-head">
+                    Projects
+                </span>
+                <div id="loading" class="flex justify-center h-full w-full">
+                    <svg class="animate-spin h-[3em] lg:h-[4em] w-auto opacity-60 mt-[40%] md:mt-[25%] lg:mt-[12%] text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </div>
+                <div class="hidden fade-r-scroll h-[70vh] overflow-y-scroll overscroll-y-auto px-4 -mx-4">
+                    <!-- <div class="font-nunito font-extralight italic text-yellow-300 relative -top-12 lg:-top-16 xl:text-lg text-center"> "ughhh... another jack of all trades..." </div> -->
+                    <div>
+                        <div id="filter" class="font-nunito hidden md:block text-lg lg:flex lg:justify-between mb-4">
+                            <div>
+                                filter by Technology used:
+                                <select id="tech" name="tech" class="bg-blue-200/70 hover:bg-blue-200 pl-2 rounded-lg text-base ml-2 transition duration-150">
+                                    <option value="" selected disabled hidden> Select </option>
+                                    <!-- To be inserted through JS -->
+                                </select>
+                                <button id="add" class="ml-2 rounded-md bg-blue-200/80 disabled:bg-blue-200/60 disabled:hover:bg-blue-200/60 disabled:text-base/80 disabled:cursor-not-allowed hover:bg-blue-200 text-base px-2 transition duration-150">
+                                    Add Filter
+                                </button>
+                            </div>
+
+                            <div id="filterList" class="flex">
+                                <!-- To be inserted through JS -->
+                            </div>
+                        </div>
+
+                        <div id="showFilters" class="hidden">
+                            <div class="proj-sec pt-6" tabindex="0">
+                                <div id="display" class="flex">
+                                    <!-- To be inserted through JS -->                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="allProjects">
+                            <div id="web" class="proj-sec" tabindex="0">
+                                <header>
+                                    <span> Web Development </span>
+                                    <span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </header>
+                                <div class="hidden">
+                                    <!-- To be inserted through JS -->                                    
+                                </div>
+                            </div>
+
+                            <div id="app" class="proj-sec" tabindex="0">
+                                <header>
+                                    <span> Desktop/Mobile App </span>
+                                    <span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </header>
+                                <div class="hidden">
+                                    <!-- To be inserted through JS -->
+                                </div>
+                            </div>
+
+                            <div id="game" class="proj-sec" tabindex="0">
+                                <header>
+                                    <span> Game Development </span>
+                                    <span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </header>
+                                <div class="hidden">
+                                    <!-- To be inserted through JS -->
+                                </div>
+                            </div>
+
+                            <div id="web3" class="proj-sec" tabindex="0">
+                                <header>
+                                    <span> Web3/Blockchain </span>
+                                    <span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </header>
+                                <div class="hidden">
+                                    <!-- To be inserted through JS -->
+                                </div>
+                            </div>
+
+                            <div id="ml" class="proj-sec" tabindex="0">
+                                <header>
+                                    <span> Machine Learning </span>
+                                    <span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+                                </header>
+                                <div class="hidden">
+                                    <!-- To be inserted through JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="foot" class="rounded-full mx-auto mt-[15vh] mb-4 h-3 w-[35%] bg-gradient-to-r from-gr7-1 to-gr7-2 motion-safe:animate-gradient"></div>
+                </div>
+            </section>
+
+
+            <section id="about" class="snap-always snap-start h-[90vh]">
+                <span class="sec-head">
+                    My Journey
+                </span>
+                <div id="loading" class="flex justify-center h-full w-full">
+                    <svg class="animate-spin h-[3em] lg:h-[4em] w-auto opacity-60 mt-[40%] md:mt-[25%] lg:mt-[12%] text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </div>
+                <div class="hidden w-full h-[75%]">
+                    <div class="group m-1 h-full relative sm:h-[65%] lg:h-[60%]">
+                        <div class="hidden sm:flex justify-start lg:motion-safe:opacity-80 lg:motion-safe:group-hover:opacity-90 transform transition duration-200">
+                            <div class="w-24 transform rotate-45 flex relative bottom-[1.8rem] -mr-[1.35rem]">
+                                <div class="border-b-[1rem] border-b-gr6-1 border-l-[1rem] border-l-transparent"></div>
+                                <div class="w-20 h-4 bg-gr6-1 transform scale-x-[1.03]"></div>
+                                <div class="border-b-[0.1rem] border-b-gr6-1 border-r-[0.35rem] border-r-transparent"></div>
+                            </div>
+                            <div id="timeline" class="h-4 lg:motion-safe:group-hover:scale-y-110 flex justify-evenly gap-4 transition duration-200 bg-gradient-to-r from-gr6-1 to-gr6-2 w-[60vh] sm:w-[80%] rounded-r-full">
+                                <!-- To be inserted through JS -->
+                            </div>
+                        </div>
+                        <div class="sm:hidden flex h-full flex-col justify-start absolute right-0 -mr-8 bottom-4">
+                            <div class="w-4 h-full bg-gradient-to-t from-gr6-1 to-gr6-2 rounded-t-full"></div>
+                            <div class="w-24 transform rotate-45 flex relative -bottom-5 -left-3">
+                                <div class="border-b-[0.75rem] border-b-gr6-1 border-l-[0.75rem] border-l-transparent"></div>
+                                <div class="w-20 h-[0.85rem] bg-gr6-1 transform scale-x-[1.03]"></div>
+                                <div class="border-b-[0.1rem] border-b-gr6-1 border-r-[0.1rem] border-r-transparent"></div>
+                            </div>
+                        </div>
+                        <div id="events" class="absolute top-12 right-[4.5rem] sm:static sm:top-0 sm:right-0 ml-[4.65rem] h-[27rem] sm:h-auto pb-4 flex flex-col-reverse sm:flex-row justify-evenly gap-8 sm:gap-4 w-[80%]">
+                            <!-- To be inserted through JS -->
+                        </div>
+                    </div>
+                    <div class="w-full h-[35%] lg:h-[40%] hidden sm:flex font-nunito">
+                        <div class="group w-[55%] mr-1 h-full text-center flex flex-col justify-center items-center text-lg lg:text-xl lg:font-light">
+                            <div class="transform transition duration-300 lg:motion-safe:group-hover:-translate-y-2 bg-gradient-to-r from-gr1-1 via-gr1-2 to-gr1-3 w-[50%] h-1 rounded-full xl:mb-4"></div>
+                            <p id="bio" class="py-2 xl:py-0"></p>
+                            <div class="transform transition duration-300 lg:motion-safe:group-hover:translate-y-2 bg-gradient-to-r from-gr1-1 via-gr1-2 to-gr1-3 w-[50%] h-1 rounded-full xl:mt-4"></div>
+                        </div>
+                        <div id="achievements" class="w-[40%] m-1 h-full text-lg">
+                            <span class="text-2xl font-semibold opacity-80"> Recent Achievements: </span>
+                            <hr class="rounded-full w-[50%] mt-1 mb-2 border-[1px] opacity-30">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="contact" class="snap-always snap-start h-[90vh]">
+                <span class="sec-head">
+                    Reach out to me
+                </span>
+                <div class="flex flex-col md:flex-row md:justify-around items-center md:items-start h-full w-full">
+                    <div class="w-full md:w-[30%] -mt-10 mb-6 flex justify-evenly items-center sm:block lg:pt-10">
+                        <img class=" w-[40vw] rounded-full border-[4px] border-orange-500 md:hover:motion-safe:rounded-3xl duration-500 transition-[border-radius] linear" src="./data/images/photo.jpg" alt="Photo">
+                        <div class="">
+                            <a id="mail-link" href="" class="flex justify-center items-center gap-1 font-nunito text-xl mt-6 py-1 rounded-lg transition duration-200 md:motion-safe:hover:scale-105 md:hover:bg-gray-400/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-5 w-auto fill-current text-white stroke-current" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="5" d="M41.1 43H2V7h54v22.9" stroke-linejoin="round" stroke-linecap="round"></path>
+                                    <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="5" d="M2 7l27 20.6L56 7" stroke-linejoin="round" stroke-linecap="round"></path>
+                                    <path data-name="layer1" fill="none" stroke-miterlimit="10" stroke-width="5" d="M55.1 29L34.4 49.7 30 61l11.4-4.3L62.2 36l-7.1-7zM34.4 49.7l7 7" stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                                <span class="hidden md:inline-block"> :&nbsp; </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-full mt-2 md:mt-0 lg:mt-6 md:w-[45%] lg:w-[35%] px-4 font-baloo text-2xl sm:flex sm:flex-wrap sm:justify-between lg:flex-col sm:gap-x-10 lg:gap-x-0">
+                        <div>
+                            <p> Connect with me: </p>
+                            <div id="social1" class="flex w-full justify-evenly mb-4 md:mb-8">
+                        
+                            </div>
+                        </div>
+                        <div class="divider"> </div>
+                        <div>
+                            <p> Check out my projects: </p>
+                            <div id="social2" class="flex w-full justify-evenly mb-4 md:mb-8">
+                                
+                            </div>
+                        </div>
+                        <div class="divider"> </div>
+                        <div>
+                            <p> Drop me a text: </p>
+                            <div id="social3" class="flex w-full justify-evenly mb-4 md:mb-8">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
