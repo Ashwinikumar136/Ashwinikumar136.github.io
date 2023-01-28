@@ -1,0 +1,93 @@
+{
+    "comments": ["0: learning, 1: beginner, 2: intermediate, 3: experienced, 4: expert",
+                    "icons path: data/images/"],
+
+    "skills": {
+        "languages": [
+            {
+                "Python": {
+                    "rating": 3,
+                    "icon": "python.png"
+                }
+            },
+            {
+                "JavaScript": {
+                    "rating": 2,
+                    "icon": "js.png"
+                }
+            },
+            {
+                "HTML/CSS": {
+                    "rating": 3,
+                    "icon": "html.png"
+                }
+            },
+            {
+                "Rust": {
+                    "rating": 2,
+                    "icon": "rust.png"
+                }
+            },
+            {
+                "Solidity": {
+                    "rating": 1,
+                    "icon": "sol.png"
+                }
+            }
+        ],
+
+        "libraries": [
+            {
+                "TailwindCSS": {
+                    "rating": 3,
+                    "icon": "tailwind.png"
+                }
+            },
+            {
+                "Flask": {
+                    "rating": 2,
+                    "icon": "flask.png"
+                }
+            },
+            {
+                "ReactJS": {
+                    "rating": 2,
+                    "icon": "react.png"
+                }
+            },
+            {
+                "MySQL": {
+                    "rating": 2,
+                    "icon": "mysql.png"
+                }
+            }
+        ],
+
+        "tools": [
+            {
+                "Linux": {
+                    "rating": 3,
+                    "icon": "linux.png"
+                }
+            },
+            {
+                "Git": {
+                    "rating": 3,
+                    "icon": "git.png"
+                }
+            },
+			{
+				"AWS": {
+					"rating": 2,
+					"icon": "aws.png"
+				}
+			},
+            {
+                "Adobe Illustrator": {
+                    "rating": 2,
+                    "icon": "ai.png"
+                }
+            }
+        ]
+    }
+}
